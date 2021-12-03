@@ -1,7 +1,7 @@
 {
   "name": "vies-checker",
   "version": "1.0.2",
-  "description": "Checks VAT number in VIES",
+  "description": "Simple European VIES VAT number validator",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
