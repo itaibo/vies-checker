@@ -1,6 +1,6 @@
 {
   "name": "vies-checker",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Checks VAT number in VIES",
   "main": "index.js",
   "scripts": {
