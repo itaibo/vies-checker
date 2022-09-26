@@ -1,4 +1,6 @@
 # VIES checker
+![EU API Works](https://github.com/itaibo/vies-checker/actions/workflows/eu-api.yaml/badge.svg)
+
 European VIES VAT number validator (https://ec.europa.eu/taxation_customs/vies)
 
 ### Installation

@@ -1,4 +1,4 @@
-name: Check EU API
+name: EU API Works
 
 on:
   schedule:
