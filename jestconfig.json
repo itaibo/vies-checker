@@ -6,11 +6,6 @@
 	"moduleFileExtensions": ["ts", "tsx", "js", "jsx", "json", "node"],
 	"extensionsToTreatAsEsm": [".ts"],
 	"preset": "ts-jest",
-	"globals": {
-		"ts-jest": {
-		  "useESM": true
-		}
-	},
 	"moduleNameMapper": {
 		"^(\\.{1,2}/.*)\\.js$": "$1"
 	}
