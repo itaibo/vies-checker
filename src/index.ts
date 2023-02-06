@@ -11,3 +11,5 @@ export async function isValid(country: string, number:string): Promise<boolean |
 
 	return valid;
 }
+
+export default isValid;
