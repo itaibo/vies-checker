@@ -12,9 +12,9 @@ npm install vies-checker
 
 #### Require/Import the module
 ```js
-const vies = require('vies-checker');
+const { isValid } = require('vies-checker');
 
-import { viesChecker } from 'vies-checker';
+import { isValid } from 'vies-checker';
 ```
 
 #### Use the isValid function
@@ -22,9 +22,9 @@ import { viesChecker } from 'vies-checker';
 const COUNTRY_CODE = 'IT';
 const VAT_NUMBER = 'B12345678';
 
-// vies.isValid returns a boolean. If something is wrong, it will throw an error
+// isValid returns a boolean. If something is wrong, it will throw an error
 try {
-  const validVAT = await vies.isValid(COUNTRY_CODE, VAT_NUMBER);
+  const validVAT = await isValid(COUNTRY_CODE, VAT_NUMBER);
   console.log(`VAT number ${(validVAT ? 'is' : 'is not')} in VIES`);
 } catch (e) {
   console.error(e);
