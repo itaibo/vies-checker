@@ -6,6 +6,7 @@ test('Check valid VIES', async () => {
 });
 
 test('Check invalid VIES', async () => {
+	// @ts-ignore
 	const result = await isValid('ML', 'ABC123456');
 	expect(result).toBe(false);
 });
