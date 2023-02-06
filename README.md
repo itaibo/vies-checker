@@ -18,5 +18,5 @@ const VAT_NUMBER = 'B12345678';
 // vies.isValid returns a boolean
 const validVAT = await vies.isValid(COUNTRY_CODE, VAT_NUMBER);
 
-console.log(`VAT number ${(validVAT : 'is' : 'is not')} in VIES`);
+console.log(`VAT number ${(validVAT ? 'is' : 'is not')} in VIES`);
 ```
