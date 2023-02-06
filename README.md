@@ -37,7 +37,6 @@ These are the errors that might ocurr. Use a try/catch to handle them properly.
 
 | Error name                | Description                                                                                                                              | Throws error |
 |---------------------------|------------------------------------------------------------------------------------------------------------------------------------------|--------------|
-| `INVALID_INPUT`             | The provided CountryCode is invalid or the VAT number is empty                                                                           | No           |
 | `GLOBAL_MAX_CONCURRENT_REQ` | Your Request for VAT validation has not been processed; the maximum number of concurrent requests has been reached                       | Yes          |
 | `MS_MAX_CONCURRENT_REQ`     | Your Request for VAT validation has not been processed; the maximum number of concurrent requests for this Member State has been reached | Yes          |
 | `SERVICE_UNAVAILABLE`       | An error was encountered either at the network level or the Web application level, try again later                                       | Yes          |
