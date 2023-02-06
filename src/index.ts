@@ -1,7 +1,7 @@
 import request from './helpers/request.js';
-import { Response } from './interfaces.js';
+import { Response, EuropeanMemberState } from './interfaces.js';
 
-export async function isValid(country: string, number:string): Promise<boolean | null> {
+export async function isValid(country: EuropeanMemberState, number:string): Promise<boolean | null> {
 	if (!country || !number) return null;
 
 	const response: null | Response = await request(country, number);

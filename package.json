@@ -6,7 +6,6 @@
     "build": "rm -rf ./dist && npm run build:esm && npm run build:cjs && sh ./scripts/build-packages.sh",
     "build:esm": "tsc -p tsconfig.esm.json",
     "build:cjs": "tsc -p tsconfig.cjs.json",
-    "build:types": "tsc -p tsconfig.types.json",
     "prepare": "npm run build",
     "test": "jest --config jestconfig.json"
   },

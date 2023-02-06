@@ -1,5 +1,5 @@
 import https from 'https';
-import { Response } from '../interfaces.js';
+import { Response, EuropeanMemberState } from '../interfaces.js';
 
 async function get(url: string): Promise<Response> {
 	return new Promise(((resolve, reject) => {
@@ -29,7 +29,7 @@ async function get(url: string): Promise<Response> {
 	}));
 }
 
-export default async function request(country: string, number: string): Promise<Response | null> {
+export default async function request(country: EuropeanMemberState, number: string): Promise<Response | null> {
 	const url = `https://ec.europa.eu/taxation_customs/vies/rest-api/ms/${country}/vat/${number}`;
 
 	let response: Response;
@@ -38,6 +38,12 @@ export default async function request(country: string, number: string): Promise<
 		response = await get(url);
 	} catch (e) {
 		return null;
+	}
+
+	const userError = response?.userError;
+
+	if (userError && !['VALID', 'INVALID_INPUT'].includes(userError)) {
+		throw new Error(userError);
 	}
 
 	return response;
