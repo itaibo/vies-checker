@@ -1,6 +1,6 @@
 {
   "name": "vies-checker",
-  "version": "3.0.0",
+  "version": "3.0.1",
   "description": "Simple European VIES VAT number validator",
   "scripts": {
     "build": "rm -rf ./dist && npm run build:esm && npm run build:cjs && sh ./scripts/build-packages.sh",
