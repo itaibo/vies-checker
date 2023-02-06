@@ -27,7 +27,7 @@ try {
   const validVAT = await vies.isValid(COUNTRY_CODE, VAT_NUMBER);
   console.log(`VAT number ${(validVAT ? 'is' : 'is not')} in VIES`);
 } catch (e) {
-	console.error(e);
+  console.error(e);
 }
 
 ```
