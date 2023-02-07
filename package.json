@@ -13,7 +13,7 @@
     "type": "git",
     "url": "git+https://github.com/itaibo/vies-checker.git"
   },
-  "author": "Iñigo Taibo",
+  "author": "Iñigo Taibo <itaibo@hey.com>",
   "keywords": [
     "vies",
     "europe",
@@ -21,7 +21,7 @@
     "vat",
     "validation"
   ],
-  "license": "ISC",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/itaibo/vies-checker/issues"
   },
