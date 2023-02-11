@@ -42,7 +42,7 @@ export default async function request(country: EuropeanMemberState, number: stri
 
 	const userError = response?.userError;
 
-	if (userError && !['VALID', 'INVALID_INPUT'].includes(userError)) {
+	if (userError && !['VALID', 'INVALID', 'INVALID_INPUT'].includes(userError)) {
 		throw new Error(userError);
 	}
 
