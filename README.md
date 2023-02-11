@@ -33,7 +33,7 @@ try {
 ```
 
 ### Errors
-These are the errors that might ocurr. Use a try/catch to handle them properly.
+These are the errors that might occur. Use a try/catch to handle them properly.
 
 | Error name | Description |
 |---|---|
