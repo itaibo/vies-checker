@@ -6,7 +6,6 @@ test('Check valid VIES', async () => {
 });
 
 test('Check valid country code + invalid number VIES', async () => {
-	// @ts-ignore
 	const result = await isValid('ES', 'ABC123456');
 	expect(result).toBe(false);
 });
