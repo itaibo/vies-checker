@@ -1,16 +1,21 @@
 {
-	"compilerOptions": {
-		"module": "esnext",
-		"esModuleInterop": true,
-		"target": "es6",
-		"noImplicitAny": true,
-		"moduleResolution": "node",
-		"sourceMap": false,
-		"outDir": ".",
-		"baseUrl": "."
-	},
-	"include": [
-		"src/**/*",
-	],
-	"exclude": []
+  "compilerOptions": {
+    "target": "ES2022",
+    "module": "ESNext",
+    "lib": ["ES2022"],
+    "types": ["node"],
+    "moduleResolution": "bundler",
+    "strict": true,
+    "noImplicitAny": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "resolveJsonModule": true,
+    "declaration": true,
+    "sourceMap": true,
+    "outDir": ".",
+    "baseUrl": "."
+  },
+  "include": ["src/**/*"],
+  "exclude": ["test/**/*", "dist/**/*", "node_modules/**/*"]
 }

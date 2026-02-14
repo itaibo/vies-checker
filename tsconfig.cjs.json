@@ -1,8 +1,9 @@
 {
-	"extends": "./tsconfig",
-	"compilerOptions": {
-		"module": "CommonJS",
-		"outDir": "dist/cjs",
-		"target": "ES2015"
-	}
+  "extends": "./tsconfig",
+  "compilerOptions": {
+    "module": "CommonJS",
+    "moduleResolution": "node",
+    "outDir": "dist/cjs",
+    "target": "ES2015"
+  }
 }

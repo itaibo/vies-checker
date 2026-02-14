@@ -1,9 +1,10 @@
 {
-	"extends": "./tsconfig",
-	"compilerOptions": {
-		"module": "esnext",
-		"outDir": "dist/esm",
-		"target": "esnext",
-		"declaration": true
-	}
+  "extends": "./tsconfig",
+  "compilerOptions": {
+    "module": "esnext",
+    "moduleResolution": "bundler",
+    "outDir": "dist/esm",
+    "target": "esnext",
+    "declaration": true
+  }
 }

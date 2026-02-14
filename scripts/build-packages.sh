@@ -1,12 +1,12 @@
 #!/bin/bash
 cat >dist/cjs/package.json <<!EOF
 {
-	"type": "commonjs"
+  "type": "commonjs"
 }
 !EOF
 
 cat >dist/esm/package.json <<!EOF
 {
-	"type": "module"
+  "type": "module"
 }
 !EOF
